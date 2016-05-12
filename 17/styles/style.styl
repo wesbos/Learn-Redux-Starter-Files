@@ -1,0 +1,149 @@
+@import '_normalize.styl'
+@import '_typography.styl'
+@import '_animations.styl'
+
+body
+  background offwhite
+
+.photo-grid
+  display flex
+  flex-wrap wrap
+  max-width 1200px
+  margin 0 auto
+
+.grid-figure
+  flex-basis calc(33.333% - 4rem)
+  flex-grow 1
+  flex-shrink 0
+  margin 0 2rem 2rem 2rem
+  padding 2rem
+  border 1px solid lightgray
+  background white
+  box-shadow 0 0 0 5px rgba(0,0,0,0.03);
+  position relative
+
+.single-photo
+  @extend .grid-figure
+  max-width 900px
+  margin 0 auto
+  display flex
+  background white
+  .grid-figure
+    box-shadow none
+    margin 0 2rem 0 0
+    border 0
+    padding 0
+    flex 1 0 60%
+    max-width 60%
+  .comments
+    flex 1 0 40%
+    max-width 40%
+  .grid-photo
+    width 100%
+    margin 0
+
+.grid-photo
+  width calc(100% + 4rem)
+  margin-left -2rem
+  margin-top -2rem
+  max-width none
+
+// Comments
+.remove-comment
+  background none
+  border 0
+  line-height 1
+  opacity 0
+  &:hover
+    color red
+
+.comment
+  border-bottom 1px solid lightgrey
+  padding 0.5rem 0
+  p
+    font-size 1.2rem
+    margin 0
+  strong
+    color blue
+    margin-right 5px
+  &:hover
+    .remove-comment
+      opacity 1
+ 
+.comment-form 
+  input, textarea
+    width 100%
+    border 0
+    font-size 1.3rem
+    padding 1rem 0
+    border-bottom 1px solid lightgrey
+    outline none
+    resize vertical
+
+
+.grid-photo-wrap
+  position relative
+  
+.likes-heart
+  background url(http://f.cl.ly/items/3Y373q2Q3J3Y1j203n0m/Bitmap-3.png) center no-repeat
+  background-size contain
+  font-size 2rem
+  padding 1rem
+  position absolute
+  color blue
+  left 50%
+  top 50%
+  pointer-events none
+  
+
+/*  
+  Buttons  
+*/
+
+.control-buttons
+  display flex
+  justify-content space-between
+    
+button, .button
+  border 2px solid lighten(grey, 90%)
+  background none
+  flex-basis 48%
+  display inline-block
+  line-height 2
+  text-decoration none
+  padding 5px
+  text-align center
+  font-size 15px
+  color blue
+  transition all 0.2s
+  box-sizing padding-box
+  &:hover, &:focus
+    border-color blue
+    outline 0
+
+/*
+  Cowboy style speech bubble - you should probably use an SVG for this if you are doing more icons.
+*/
+.speech-bubble
+  size = 1.25rem
+  width size * 1.2
+  height size 
+  background blue
+  display inline-block
+  border-radius 50%
+  position relative
+  &:after
+    display inline-block
+    position absolute
+    content ''
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 size size 0
+    border-color: transparent blue transparent transparent
+    top 30%
+    left 0
+
+  
+  
+
