@@ -18,4 +18,16 @@ Pull requests that fix dependencies between the videos and this repo are welcome
 
 **Before anything**, make sure you are on the latest node. You can run `node -v` and if you have anything less than `5.x`, you'll need to update. The files will probably work on older versions, but in my experience 80% of issues go away with an update.
 
-I'll use this space to add FAQ as they come in.
+### Q: I'm getting Unexpected Token Error
+
+**A:** You probably don't have the `.babelrc` file in your `learn-redux` folder. This makes sure that you have all the right transpile dependencies. [Grab it from here](https://github.com/wesbos/Learn-Redux-Starter-Files/blob/master/learn-redux/.babelrc).
+
+### Q: How do I download these videos?
+
+**A:** I made a video for [exactly this](https://www.youtube.com/watch?v=-eUd2k5M1B0). 
+
+### Q: What theme and font are you using?
+
+**A:** Cobalt2 and Operator Mono. I wrote a bit of info here → <http://wesbos.com/uses>
+
+
