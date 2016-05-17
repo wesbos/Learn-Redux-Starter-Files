@@ -16,6 +16,6 @@ Pull requests that fix dependencies between the videos and this repo are welcome
 
 ## FAQ / Help
 
-**Before anything**, make sure you are on the latest node. You can run `npm -v` and if you have anything less than `5.x`, you'll need to update. The files will probably work on older versions, but in my experience 80% of issues go away with an update.
+**Before anything**, make sure you are on the latest node. You can run `node -v` and if you have anything less than `5.x`, you'll need to update. The files will probably work on older versions, but in my experience 80% of issues go away with an update.
 
 I'll use this space to add FAQ as they come in.
