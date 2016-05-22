@@ -6,7 +6,7 @@ There are only folders for videos which have significant changes.
 
 ## Getting Started
 
-Fork or download this repo and run `npm install` in the folder with the `package.json` file.
+Fork or download this repo and run `npm install` in the `learn-redux` folder with the `package.json` file.
 
 
 ## Pull Requests 
