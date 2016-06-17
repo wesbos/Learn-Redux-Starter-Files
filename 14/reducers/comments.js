@@ -1,4 +1,4 @@
-function comments(state = [], action) {
+function comments(state = {}, action) {
   return state;
 }
 
