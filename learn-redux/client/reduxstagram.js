@@ -18,7 +18,8 @@ import store, { history } from './store';
 const router = (
   <Provider store={store}>
     <Router history={history}>
-      <Route path="/" component={App}>
+      <Route path="/" component={App}> // If the url matches "/" or a further extension of, grab the Main component.
+        // Then depending on the URL structure, either pass 'Main', 'PhotoGrid' or 'Single'.
         <IndexRoute component={PhotoGrid}></IndexRoute>
         <Route path="/view/:postId" component={Single}></Route>
       </Route>
