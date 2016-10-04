@@ -26,7 +26,7 @@ const defaultState = {
 // ________________________________________________
 
 
-// Creating the store using our collection of reducers and collection of data
+// Create the store using collection of reducers and collection of data
 const store = createStore(rootReducer, defaultState, enhancers);
 
 export const history = syncHistoryWithStore(browserHistory, store);
