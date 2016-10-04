@@ -1,3 +1,5 @@
+// Creates actions including what happened and the payload of information that is needed to execute. When the actions get dispatched they are handled by a reducer and then the reducer is responsible for updating the state.
+
 // increment
 export function increment(index) {
   return {

@@ -1,13 +1,8 @@
-// a reducer takes in two things:
+// A reducer's job is to take in action and store, process the action and then return the store.
 
-//1. the action (info about what happened)
-//2. copy of current state
-
-// intake action and store
-//
-// process request
-//
-// return store
+// A reducer takes in two things:
+// 1) the action (info about what happened)
+// 2) copy of current state
 
 function posts(state = [], action) {
   switch(action.type) {
