@@ -4,6 +4,12 @@
     "node": true
   },
   "parser": "babel-eslint",
+  "parserOptions": {
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+    }
+  },
   "rules": {
     "quotes": [2, "single"],
     "strict": [2, "never"],

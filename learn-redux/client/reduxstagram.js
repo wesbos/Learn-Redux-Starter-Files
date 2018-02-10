@@ -1,1 +1,2 @@
-// let's go!
+import React from 'react';
+import { Render } from 'react-dom';
