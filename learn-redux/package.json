@@ -43,7 +43,6 @@
     "react-transform-hmr": "^1.0.4",
     "redbox-react": "^1.2.3",
     "redux": "^3.5.2",
-    "rimraf": "^2.5.2",
     "style-loader": "^0.13.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.0.0",
@@ -54,6 +53,7 @@
   "devDependencies": {
     "expect": "^1.18.0",
     "expect-jsx": "^2.5.1",
+    "rimraf": "^2.5.2",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^15.0.2"
   }
