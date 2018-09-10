@@ -10,7 +10,7 @@ import Single from './components/Single';
 import PhotoGrid from './components/PhotoGrid';
 
 //import react router deps
-import { Router, Route, IndexRoute, browswerHistory } from 'react-router';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 const router = (
   <Router history={browserHistory}>
