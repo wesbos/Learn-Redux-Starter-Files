@@ -1,6 +1,12 @@
 function posts(state = [], action) {
-  console.log(state, action);
-  return state;
+  switch (action.type) {
+    case 'INCREMENT_LIKES':
+      const newState = [...state];
+      newState[action.index].likes++;
+      return newState;
+    default:
+      return state;
+  }
 }
 
 export default posts;
