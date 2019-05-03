@@ -19,15 +19,26 @@ const Comments = class extends React.Component {
     const author = this.refs.author.value;
     const comment = this.refs.comment.value;
     addComment(postId, author, comment);
+    this.refs.commentForm.reset();
   }
 
   renderComment(comment, i) {
+    const {
+      params: { postId },
+      removeComment
+    } = this.props;
+
     return (
       <div key={i} className="comment">
         <p>
           <strong>{comment.user}</strong>
           {comment.text}
-          <button className="remove-comment">&times;</button>
+          <button
+            className="remove-comment"
+            onClick={removeComment.bind(null, postId, i)}
+          >
+            &times;
+          </button>
         </p>
       </div>
     );
