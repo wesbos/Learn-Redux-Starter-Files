@@ -4,7 +4,21 @@ const Comments = class extends React.Component {
   constructor(props) {
     super(props);
 
+    this.handleSubmit = this.handleSubmit.bind(this);
     this.renderComment = this.renderComment.bind(this);
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+
+    const {
+      addComment,
+      params: { postId }
+    } = this.props;
+
+    const author = this.refs.author.value;
+    const comment = this.refs.comment.value;
+    addComment(postId, author, comment);
   }
 
   renderComment(comment, i) {
@@ -25,7 +39,11 @@ const Comments = class extends React.Component {
     return (
       <div className="comments">
         {postComments.map(this.renderComment)}
-        <form ref="commentForm" className="comment-form">
+        <form
+          ref="commentForm"
+          className="comment-form"
+          onSubmit={this.handleSubmit}
+        >
           <input type="text" ref="author" placeholder="author" />
           <input type="text" ref="comment" placeholder="comment" />
           <input type="submit" hidden />
