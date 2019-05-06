@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { render } from 'react-dom';
 
 // Import CSS
@@ -14,6 +13,12 @@ import PhotoGrid from './components/PhotoGrid';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import store, { history } from './store';
+
+// Sentry config
+import Raven from 'raven-js';
+import { sentry_url } from './data/config';
+console.log(process.env.SENTRY_URL);
+//Raven.config(sentry_url).install();
 
 const router = (
   <Provider store={store}>
