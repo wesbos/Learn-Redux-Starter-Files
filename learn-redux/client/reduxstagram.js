@@ -14,7 +14,6 @@ const router = (
     <Route path="/" component={Main}>
       <IndexRoute component={PhotoGrid}>
         <Route path='/view/:postId'>
-
         </Route>
       </IndexRoute>
     </Route>
